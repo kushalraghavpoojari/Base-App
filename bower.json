@@ -1,0 +1,29 @@
+{
+  "name": "base-app",
+  "description": "Base App",
+  "main": "index.js",
+  "authors": [
+    "Kushal Raghav"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mean"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.4.2",
+    "less": "^2.7.2",
+    "hover": "^2.1.0"
+  }
+}
