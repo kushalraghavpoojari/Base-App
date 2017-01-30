@@ -3,7 +3,9 @@ var app = express();
 var mongoose = require('mongoose');
 var cors = require('cors');
 var bodyParser = require('body-parser');
+var User = require('./models/User.js');
 var config = require('./config.js');
+//mongoose.connect(config.MONGOOSE_CONNECTON);
 
 var port = process.env.PORT || 8080;
 
