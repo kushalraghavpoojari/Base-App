@@ -10,13 +10,19 @@
     /* @ngInject */
     function authService($http) {
         var service = {
+            auth: false,
             someFunction: someFunction
         };
 
         return service;
 
-        function someFunction() {
+        function someFunction(test) {
             //Do something
+            if(test === 'true') {
+              service.auth = true;
+          } else {
+              service.auth = false;
+          }
         }
     }
 })();

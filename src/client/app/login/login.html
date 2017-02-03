@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="jumbotron login-signup">
+    <div class="login-page">
+      <div class="form">
+        <form class="register-form">
+          <input type="text" placeholder="name" ng-model="loginVm.signupName"/>
+          <input type="email" placeholder="email address" ng-model="loginVm.signupEmail"/>
+          <input type="password" placeholder="password" ng-model="loginVm.signupPassword"/>
+          <button ng-click="loginVm.signup()">create</button>
+          <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+        <form class="login-form">
+          <input type="text" placeholder="email" ng-model="loginVm.loginEmail"/>
+          <input type="password" placeholder="password" ng-model="loginVm.loginPassword"/>
+          <button ng-click="loginVm.login()">login</button>
+          <p class="message">Not registered? <a href="#" ng-click="loginVm.openLogin()">Create an account</a></p>
+        </form>
+      </div>
+      </div>
+  </div>
+</div>
