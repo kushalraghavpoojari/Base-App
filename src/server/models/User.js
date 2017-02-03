@@ -16,7 +16,7 @@ var UserSchema = new mongoose.Schema({
     website: String,
     resetPasswordToken: String,
     resetPasswordExpires: Date
-})
+});
 
 var User = mongoose.model('User', UserSchema);
 

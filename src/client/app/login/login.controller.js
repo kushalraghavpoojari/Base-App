@@ -15,7 +15,7 @@
         vm.signup = signup;
 
         function openLogin() {
-            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+            $('form').animate({height: 'toggle', opacity: 'toggle'}, 'slow');
         }
 
         function login() {
