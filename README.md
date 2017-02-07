@@ -3,8 +3,8 @@ Base Application- Mean Stack
 
 #### Run Application
 
-> `npm install`
+`npm install`
 
->  `bower install`
+`bower install`
 
-> `gulp serve-dev`
+`gulp serve-dev`
