@@ -7,7 +7,7 @@
           <input type="email" placeholder="email address" ng-model="loginVm.signupEmail"/>
           <input type="password" placeholder="password" ng-model="loginVm.signupPassword"/>
           <button ng-click="loginVm.signup()">create</button>
-          <p class="message">Already registered? <a href="#">Sign In</a></p>
+          <p class="message">Already registered? <a href="#" ng-click="loginVm.openLogin()">Sign In</a></p>
         </form>
         <form class="login-form">
           <input type="text" placeholder="email" ng-model="loginVm.loginEmail"/>

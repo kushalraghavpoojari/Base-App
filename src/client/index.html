@@ -2,18 +2,20 @@
 <html ng-app='app'>
 <head>
     <title>Base App</title>
+    <!-- build:css styles/lib.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="/bower_components/hover/css/hover.css" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../bower_components/hover/css/hover.css" />
     <!-- endbower -->
+    <!-- endbuild -->
 
+    <!-- build:css styles/app.css -->
     <!-- inject:css -->
-    <link rel="stylesheet/less" type="text/css" href="./styles/styles.less">
-    <link rel="stylesheet/css" type="text/css" href="./.tmp/styles.css">
+    <link rel="stylesheet" href="/src/client/styles/styles.css">
     <!-- endinject -->
+    <!-- endbuild -->
+
     <base href="/">
 </head>
 <body>
@@ -63,22 +65,25 @@
   </nav>
     <div ui-view style="height:100%" class="overflow padding">
     </div>
-
+    <!-- build:js js/lib.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="/bower_components/less/dist/less.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../../bower_components/less/dist/less.js"></script>
     <!-- endbower -->
+    <!--endbuild -->
 
+    <!-- build:js js/app.js -->
     <!-- inject:js -->
     <script src="/src/client/app.module.js"></script>
     <script src="/src/client/app.config.js"></script>
-    <script src="/src/client/app/home/home.controller.js"></script>
-    <script src="/src/client/app/about/about.controller.js"></script>
-    <script src="/src/client/app/login/login.controller.js"></script>
     <script src="/src/client/app/authService.factory.js"></script>
+    <script src="/src/client/app/about/about.controller.js"></script>
+    <script src="/src/client/app/home/home.controller.js"></script>
+    <script src="/src/client/app/login/login.controller.js"></script>
     <!-- endinject -->
+    <!--endbuild -->
 </body>
 </html>

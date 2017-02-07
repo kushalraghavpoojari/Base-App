@@ -17,6 +17,21 @@
     "test",
     "tests"
   ],
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css",
+        "css/font-awesome.css.map"
+      ]
+    }
+  },
   "dependencies": {
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
